@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --background-body: #191820;
+    --primary-color3: #3749e9;
+    --primary-color4: #28303f;
+    --primary-color6: #1f1f2c;
+    --primary-color8: #b9b8bb;
+    --primary-color9: rgba(86, 86, 96, .1);
+    --primary-color10: #565660;
+    --primary-color11: #28303f;
+    --primary-color12: hsla(0, 0%, 90%, .5);
+    --primary-color18: #f7f7f7;
+    --primary-color21: #28303f;
+    --primary-color29: hsla(0, 0%, 100%, .3);
+    --primary-color30: #a9a9c2;
+    --primary-color36: #565660;
+    --primary-color37: #b9b8bb;
+    --product-color4: linear-gradient(156.67deg, hsla(240, 1%, 44%, .4) 0.07%, rgba(100, 97, 113, .148) 99.07%);
+    --while-color: #fff;
+    --black-color: #000;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-size: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.4;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* keyfram */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBar {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInT {
+    from {
+        transform: translatey(100%);
+    }
+
+    to {
+        transform: translatey(0);
+    }
+}
+
+/* bosstrap */
+.bold {
+    font-weight: bold !important;
+}
+
+.mr-0 {
+    margin-right: 0 !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.min-w-180 {
+    min-width: 180px !important;
+}
+
+.min-w-40 {
+    min-width: 40px !important;
+}
+
+.color-48BC65 {
+    color: #48BC65 !important;
+}
+
+.color-E33B3B {
+    color: #E33B3B !important;
+}
+
+/* btn */
+.primary-btn {
+    color: var(--while-color);
+    font-size: 1.6rem;
+    background-color: var(--primary-color6);
+    font-weight: 700;
+    border-radius: 99px;
+    border: 1px solid var(--primary-color4);
+    transition: all .3s ease;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* heading */
+.content__heading {
+    font-size: 4rem;
+    color: var(--while-color);
+}
+
+.content__desc {
+    font-size: 1.8rem;
+    color: var(--primary-color30);
+}
+
+/* category */
+.category-btn {
+    padding: 7.5px 8px;
+    border-color: #3749e9;
+    border: 1px solid var(--primary-color36);
+    cursor: pointer;
+    letter-spacing: .1em;
+    line-height: 22px;
+    border-radius: 100px;
+    color: #565660;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 
+.category-btn.category-btn--active {
+    background-color: #3749e9;
+    border: 1px solid var(--primary-color3);
+    color: var(--while-color);
+} */
+
+.category-list {
+    border-color: var(--primary-color36);
+    display: inline-block;
+    padding: 10px 20px;
+    float: right;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.category-list-item {
+    padding: 9px 10px 8px 16px;
+    z-index: 10;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    border-radius: 4%;
+    background-color: var(--primary-color6);
+    border: 1px solid var(--primary-color36);
+    animation: fadeIn linear .3s;
+    display: none;
+}
+
+.category-list-item-link:hover {
+    color: var(--primary-color3);
+}
+
+.category-list:hover>.category-list-item {
+    display: block;
+}
+
+/* product */
+
+.product {
+    padding: 20px 18.5px 19px;
+    border: 1.5px solid var(--primary-color4);
+    background: var(--product-color4);
+    border-radius: 15px;
+    transition: all .3s ease;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.product-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-heading-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--while-color);
+    font-weight: 700;
+}
+
+.product-heading-circle {
+    border-radius: 50%;
+    border: 1px solid var(--while-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.product-heading-circle.js-product-heading-circle--active {
+    background-color: red;
+    opacity: 1;
+}
+
+.product-heading-circle:hover {
+    background-color: red;
+    opacity: 1;
+}
+
+.product-heading-icon {
+    font-size: 1.6rem;
+    color: var(--while-color);
+    /* opacity: 0.6; */
+}
+
+.product-img {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.product-img img {
+    width: 100%;
+    vertical-align: middle;
+    scale: 1.05;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.product-price-avatar {
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 14px;
+    object-fit: cover;
+    width: 40px;
+    display: inline-block;
+}
+
+.product-price-name {
+    display: inline-block;
+}
+
+.product-price-name a {
+    text-decoration: none;
+    color: var(--while-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: block;
+}
+
+.product-price-desc {
+    margin-left: auto;
+}
+
+.product-price-desc-title {
+    font-size: 1.2rem;
+    color: var(--while-color);
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.product-price-desc-money {
+    font-size: 1.6rem;
+    color: var(--while-color);
+    display: flex;
+    align-items: center;
+}
+
+.product-price-desc-money span {
+    margin-right: auto;
+}
+
+.product-btn {
+    padding: 11px 10px;
+    font-size: 1.6rem;
+    display: block;
+    text-align: center;
+    border: 2px solid var(--while-color);
+}
+
+.product-btn i {
+    margin-right: 10px;
+}
+
+/* end */
+
+/* pagination */
+.pagination {
+    text-align: center;
+    margin-top: 50px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.pagination-btn {
+    padding: 10px 28px;
+}
+
+.pagination-btn:hover {
+    background-color: var(--primary-color3);
+}
+
+.pagination-btn i {
+    margin-left: 12px;
+}
