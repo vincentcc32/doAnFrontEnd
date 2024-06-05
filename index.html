@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <main>
+    <main class="main">
         <div class="on-the-top" id="on-top">
             <a href="#"><i class="fa-solid fa-chevron-up"></i></i></a>
         </div>
@@ -34,7 +34,7 @@
                     <div class="col-xxl-12 col-xl-12 col-lg-12">
                         <div class="header-content">
                             <div class="header__logo">
-                                <img src="./asset/img/logo-pinance.png" alt="">
+                                <a href="#"><img src="./asset/img/logo-pinance.png" alt=""></a>
                             </div>
                             <!-- nav -->
                             <div class="header__nav">
@@ -4509,7 +4509,7 @@
                     <div class="col-xxl-4 col-xl-4 col-lg-3 col-md-4 col-sm-12 col-12">
                         <div class="footer__text">
                             <div class="footer__text-logo">
-                                <img src="./asset/img/logo-pinance.png" alt="">
+                                <a href="#"><img src="./asset/img/logo-pinance.png" alt=""></a>
                             </div>
                             <p class="footer__text-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
@@ -4610,6 +4610,10 @@
         </div>
     </main>
     <script src="./asset/js/main.js"></script>
+    <!-- khong cho dowload anh thu cong tren trang web -->
+    <script type="text/javascript">
+        var message = ""; function clickIE() { if (document.all) { (message); return false; } } function clickNS(e) { if (document.layers || (document.getElementById && !document.all)) { if (e.which == 2 || e.which == 3) { (message); return false; } } } if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; } else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; document.onselectstart = clickIE } document.oncontextmenu = new Function("return false")
+    </script>
 </body>
 
 </html>

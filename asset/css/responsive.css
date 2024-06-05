@@ -99,6 +99,37 @@
         display: none;
     }
 
+    .content__home {
+        padding: 0px 0 99px;
+    }
+
+    .page-connect-wallet {
+        padding: 20px 0 50px;
+    }
+
+    .page-ranking {
+        padding: 0 0 50px;
+    }
+
+    .page-ranking__content-heading {
+        margin: 20px 0;
+    }
+
+    .page-help {
+        padding: 20px 0 50px;
+    }
+
+    .page-sign {
+        padding: 20px 0 50px;
+    }
+
+    .page-blog {
+        padding: 20px 0 50px;
+    }
+
+    .page-contact {
+        padding: 20px 0 50px;
+    }
 }
 
 /* ipad nho */
@@ -221,6 +252,9 @@
 }
 
 @media (max-width:400px) {
+    .hide-on-400 {
+        display: none;
+    }
 
     .page-sign__content-form-input-title::before,
     .page-sign__content-form-input-title::after {
