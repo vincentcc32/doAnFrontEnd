@@ -250,6 +250,7 @@ body {
     width: 100%;
     vertical-align: middle;
     scale: 1.05;
+    user-select: none;
 }
 
 .product-price {

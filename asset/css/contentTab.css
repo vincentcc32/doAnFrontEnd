@@ -56,6 +56,7 @@
 .page-connect-wallet__content-item-logo img {
     width: 100%;
     vertical-align: middle;
+    user-select: none;
 }
 
 .page-connect-wallet__content-item-beta span {
@@ -100,6 +101,8 @@
 
 .page-contact__content-img img {
     width: 100%;
+    vertical-align: middle;
+    user-select: none;
 }
 
 .page-contact__content-form-heading {
@@ -188,6 +191,8 @@
     width: 100%;
     border-radius: 20px;
     cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
 }
 
 .page-blog__content-item-title {
@@ -330,6 +335,7 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .page-sign__content-form-input-check {
@@ -471,6 +477,8 @@
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
+    user-select: none;
+    vertical-align: middle;
 }
 
 .page-ranking__content-rank-list-item-avt {
@@ -611,6 +619,11 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
+}
+
+.page-help__content-item-img img {
+    user-select: none;
+    vertical-align: middle;
 }
 
 .page-help__content-item-heading {

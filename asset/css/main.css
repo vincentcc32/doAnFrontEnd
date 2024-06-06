@@ -72,7 +72,6 @@ main {
     width: 100%;
     vertical-align: middle;
     user-select: none;
-    -webkit-user-modify: none !important;
 }
 
 
@@ -325,7 +324,7 @@ main {
 }
 
 .content__home-text {
-    padding-top: 178px;
+    /* padding-top: 178px; */
     height: 100%;
 }
 
@@ -356,6 +355,8 @@ main {
 
 .content__home-img img {
     width: 100%;
+    vertical-align: middle;
+    user-select: none;
 }
 
 /* content all cate */
@@ -373,6 +374,12 @@ main {
     cursor: pointer;
     border-radius: 20px;
     -webkit-tap-highlight-color: transparent;
+}
+
+.content__all-cate-item img {
+    vertical-align: middle;
+    width: 100%;
+    user-select: none;
 }
 
 .content__all-cate-link {
@@ -501,6 +508,11 @@ main {
     margin: 0 auto 20px;
 }
 
+.content__create-sales-item-img img {
+    vertical-align: middle;
+    user-select: none;
+}
+
 .content__create-sales-item-text-heading {
     margin-bottom: 16px;
 }
@@ -574,6 +586,7 @@ main {
     /* width: 20%; */
     margin-right: 15px;
     display: inline-block;
+    user-select: none;
 }
 
 .content__top-creators-member-item span h5 {
@@ -670,6 +683,7 @@ main {
 .content__hot-auction-product:hover .content__hot-auction-product-img img {
     transform: scale(1.03);
     transition: all .3s ease;
+    user-select: none;
 }
 
 .content__hot-auction-product-btn:hover {
@@ -736,6 +750,8 @@ main {
 
 .content__create-thumb-img img {
     width: 100%;
+    user-select: none;
+    vertical-align: middle;
 }
 
 .content__create-text {
@@ -850,6 +866,7 @@ main {
 .content__hot-sales-product:hover .content__hot-sales-product-img img {
     transform: scale(1.03);
     transition: all .3s ease;
+    user-select: none;
 }
 
 .content__hot-sales-product-btn:hover {
@@ -866,6 +883,7 @@ main {
 .content__hot-sales-product-price-desc-money img {
     width: 30px;
     margin-right: 10px;
+    user-select: none;
 }
 
 .content__hot-sales-product-price-desc-money span {
@@ -937,6 +955,7 @@ main {
 
 .footer__text-logo img {
     width: 100%;
+    user-select: none;
     vertical-align: middle;
 }
 

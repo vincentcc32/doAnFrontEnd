@@ -151,4 +151,39 @@ function scrollFunction() {
     }
 }
 
+// hiden and show pass login
+
+const passIconP = document.querySelector(".page-sign__content-form-icon-pass");
+const passInputP = document.querySelector(".page-sign__content-form-input-input-pass");
+
+
+passIconP.addEventListener("click", function () {
+    if (passInputP.type === "password") {
+        passInputP.type = "text";
+        passIconP.classList.replace("fa-eye-slash", "fa-eye");
+    }
+    else {
+        passInputP.type = "password";
+        passIconP.classList.replace("fa-eye", "fa-eye-slash");
+    }
+})
+
+const passIconConfP = document.querySelector(".page-sign__content-form-icon-cof-pass");
+const passInputConfP = document.querySelector(".page-sign__content-form-input-input-conf-pass");
+
+
+passIconConfP.addEventListener("click", function () {
+    if (passInputConfP.type === "password") {
+        passInputConfP.type = "text";
+        passIconConfP.classList.replace("fa-eye-slash", "fa-eye");
+    }
+    else {
+        passInputConfP.type = "password";
+        passIconConfP.classList.replace("fa-eye", "fa-eye-slash");
+    }
+})
+
+
+
+
 
