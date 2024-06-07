@@ -32,6 +32,14 @@
     }
 }
 
+@media (min-width: 63.9375em) {
+
+    .product-heading-circle:hover {
+        background-color: red;
+        opacity: 1;
+    }
+}
+
 /* ipad mobile  */
 @media (max-width: 63.9375em) {
     .open-on-mb-tl {
@@ -129,6 +137,7 @@
     .page-contact {
         padding: 20px 0 50px;
     }
+
 }
 
 /* ipad nho */

@@ -130,6 +130,7 @@
     padding: 12px 20px;
     box-shadow: none;
     outline: none;
+    cursor: pointer;
     background-color: transparent;
 }
 
@@ -349,6 +350,7 @@
     background-color: transparent;
     scale: 1.2;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .page-sign__content-form-input-title {
@@ -586,6 +588,7 @@
     color: var(--while-color);
     padding: 10px;
     font-size: 1.6rem;
+    cursor: pointer;
 }
 
 .page-help__content-wapper {

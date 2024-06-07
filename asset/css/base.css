@@ -229,10 +229,11 @@ body {
     opacity: 1;
 }
 
+/* 
 .product-heading-circle:hover {
     background-color: red;
     opacity: 1;
-}
+} */
 
 .product-heading-icon {
     font-size: 1.6rem;
@@ -334,3 +335,5 @@ body {
 .pagination-btn i {
     margin-left: 12px;
 }
+
+/*  test */
