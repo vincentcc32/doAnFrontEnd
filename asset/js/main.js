@@ -183,13 +183,4 @@ passIconConfP.addEventListener("click", function () {
     }
 })
 
-// creat nft
-
-const createNftIcon = document.querySelector(".content__create-text-btn-create-item");
-
-const createNft = document.querySelector(".create-nft");
-
-createNftIcon.addEventListener("click", function () {
-    createNft.classList.add("create-nft--active");
-})
 

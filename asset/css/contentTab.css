@@ -132,6 +132,7 @@
     outline: none;
     cursor: pointer;
     background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .page-contact__content-form-input:focus {
@@ -337,6 +338,7 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .page-sign__content-form-input-check {
@@ -572,6 +574,7 @@
     font-size: 1.4rem;
     padding: 9px 20px;
     width: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .page-help__content-search input:focus {
@@ -589,6 +592,7 @@
     padding: 10px;
     font-size: 1.6rem;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .page-help__content-wapper {

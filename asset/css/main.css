@@ -62,6 +62,7 @@ main {
 .header__logo {
     width: 20%;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__logo a {
@@ -594,6 +595,7 @@ main {
     color: var(--while-color);
     margin-bottom: 5px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .content__top-creators-member-item span h5:hover {
@@ -947,6 +949,7 @@ main {
 .footer__text-logo {
     margin-bottom: 20px;
     width: 90%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .footer__text-logo a {
@@ -1086,6 +1089,7 @@ main {
     color: #fff;
     border-radius: 0px 40px 40px 0px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .footer__contact button i {
